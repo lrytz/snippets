@@ -5,3 +5,7 @@
       try { out.print(s) }
       finally { out.close() }
     }
+    
+    def lines(f: String): List[String] = {
+      scala.io.Source.fromFile(f).getLines().toList
+    }
